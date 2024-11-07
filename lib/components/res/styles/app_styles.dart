@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-//Color _primaryColor = const Color(0xFF687daf);
+Color _primaryColor = const Color(0xFF687daf);
 
 class AppStyles {
-  static Color primaryColor = primaryColor;
+  static Color primaryColor = _primaryColor;
   static Color textColor = const Color(0xFF3b3b3b);
   static TextStyle headLineStyle1 = TextStyle(
     fontSize: 26,
