@@ -1,5 +1,7 @@
+import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
+import '../components/res/media.dart';
 import '../components/res/styles/app_styles.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,9 +10,13 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppStyles.bgColor,
       //using List view for scrollable effect
       body: ListView(
         children: [
+          const SizedBox(
+            height: 40,
+          ),
           Container(
             padding: const EdgeInsets.symmetric(
               horizontal: 20,
@@ -36,18 +42,32 @@ class HomeScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         image: const DecorationImage(
-                          image: AssetImage("assets/images/logo.png"),
+                          //AppMedia logo
+                          image: AssetImage(AppMedia.logo),
                         ),
                       ),
                     ),
                   ],
                 ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("Search icon"),
-                    Text("Empty Space"),
-                  ],
+                const SizedBox(
+                  height: 25,
+                ),
+                Container(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: const Color(0xfff4f6fd),
+                  ),
+                  child: const Row(
+                    children: [
+                      Icon(
+                        FluentSystemIcons.ic_fluent_search_regular,
+                        color: Color(0xFFBFC205),
+                      ),
+                      Text("Search"),
+                    ],
+                  ),
                 ),
               ],
             ),
