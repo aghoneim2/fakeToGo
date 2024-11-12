@@ -1,5 +1,6 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:hello/components/widgets/app_double_text.dart';
 
 import '../components/res/media.dart';
 import '../components/res/styles/app_styles.dart';
@@ -68,6 +69,13 @@ class HomeScreen extends StatelessWidget {
                       Text("Search"),
                     ],
                   ),
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
+                const AppDoubleText(
+                  bigText: "Upcoming Flights",
+                  smallText: "View All",
                 ),
               ],
             ),
