@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:hello/components/widgets/app_double_text.dart';
+import 'package:hello/components/widgets/ticket_view.dart';
 
 import '../components/res/media.dart';
 import '../components/res/styles/app_styles.dart';
@@ -77,6 +78,7 @@ class HomeScreen extends StatelessWidget {
                   bigText: "Upcoming Flights",
                   smallText: "View All",
                 ),
+                TicketView(),
               ],
             ),
           ),
